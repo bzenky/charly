@@ -31,7 +31,7 @@ export function ControlsPanel({
   return (
     <section
       aria-disabled={disabled}
-      className={`rounded-3xl border p-5 shadow-lg shadow-slate-950/10 transition ${
+      className={`min-w-0 rounded-3xl border p-5 shadow-lg shadow-slate-950/10 transition ${
         disabled
           ? "border-slate-800/70 bg-slate-900/40 opacity-60"
           : "border-slate-800 bg-slate-900/70"

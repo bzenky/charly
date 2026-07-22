@@ -296,8 +296,8 @@ export function AsciiAvatarApp() {
         </div>
       </header>
 
-      <section className="grid gap-6 lg:grid-cols-[360px_minmax(0,1fr)]">
-        <div className="space-y-6">
+      <section className="grid min-w-0 gap-6 lg:grid-cols-[360px_minmax(0,1fr)]">
+        <div className="min-w-0 space-y-6">
           <AvatarUploader
             previewUrl={previewUrl}
             error={uploadError}
@@ -315,7 +315,7 @@ export function AsciiAvatarApp() {
           />
         </div>
 
-        <div className="space-y-6">
+        <div className="min-w-0 space-y-6">
           <AsciiPreview
             result={asciiResult}
             settings={settings}
@@ -347,10 +347,10 @@ export function AsciiAvatarApp() {
           href="https://github.com/bzenky/charly"
           target="_blank"
           rel="noreferrer"
-          className="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-950/40 px-4 py-2 font-medium text-slate-200 transition hover:border-cyan-400/60 hover:text-cyan-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/60 focus:ring-offset-2 focus:ring-offset-slate-950"
+          className="inline-flex max-w-full items-center gap-2 rounded-full border border-slate-700 bg-slate-950/40 px-4 py-2 font-medium text-slate-200 transition hover:border-cyan-400/60 hover:text-cyan-200 focus:outline-none focus:ring-2 focus:ring-cyan-400/60 focus:ring-offset-2 focus:ring-offset-slate-950"
         >
           <GitHubIcon />
-          <span>github.com/bzenky/charly</span>
+          <span className="truncate">github.com/bzenky/charly</span>
         </a>
       </footer>
     </main>

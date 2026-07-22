@@ -16,7 +16,7 @@ export function MarkdownSnippet({
   return (
     <section
       aria-disabled={disabled}
-      className={`rounded-3xl border p-5 shadow-lg shadow-slate-950/10 transition ${
+      className={`min-w-0 rounded-3xl border p-5 shadow-lg shadow-slate-950/10 transition ${
         disabled
           ? "border-slate-800/70 bg-slate-900/40 opacity-60"
           : "border-slate-800 bg-slate-900/70"
@@ -41,7 +41,7 @@ export function MarkdownSnippet({
         </button>
       </div>
 
-      <pre className="overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/70 p-4 text-sm text-cyan-100 transition-colors duration-200">
+      <pre className="max-w-full overflow-x-auto rounded-2xl border border-slate-800 bg-slate-950/70 p-4 text-sm text-cyan-100 transition-colors duration-200">
         <code>
           {disabled
             ? "Upload an image to generate a Markdown snippet."
